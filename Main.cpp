@@ -1,15 +1,19 @@
-#include <QApplication>
-#include <QPushButton>
+#include "MaFenetre1.h"
+#include "MaFenetre2.h"
+#include "MaFenetre3.h"
+#include "MaFenetre4.h"
 
 int main(int argc, char *argv[])
 {
     QApplication app(argc, argv);
 
-    QWidget fenetre;
+    /*
+    MaFenetre1 fenetre(600, 300);
+    MaFenetre2 fenetre;
+    MaFenetre3 fenetre;
+    */
 
-    QPushButton bouton("Bonjour", &fenetre);
-    bouton.move(70, 60);
-
+    MaFenetre4 fenetre;
     fenetre.show();
 
     return app.exec();
